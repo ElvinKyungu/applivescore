@@ -1,0 +1,322 @@
+body
+{
+    background-color: #3e29a9;
+}
+
+#lsc_app
+{
+    padding-top: 68px;
+}
+
+#lsc_app > section
+{
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.lsc_p_lr_20
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.text{
+    font-size: 20px !important;
+    font-weight: 700;
+}
+/** Start Section Header Bar **/
+#lsc_header_bar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(55,39,134,1);
+    background: -moz-linear-gradient(-45deg, rgba(55,39,134,1) 0%, rgba(63,41,176,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(55,39,134,1)), color-stop(100%, rgba(63,41,176,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(55,39,134,1) 0%, rgba(63,41,176,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(55,39,134,1) 0%, rgba(63,41,176,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(55,39,134,1) 0%, rgba(63,41,176,1) 100%);
+    background: linear-gradient(135deg, rgba(55,39,134,1) 0%, rgba(63,41,176,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#372786', endColorstr='#3f29b0', GradientType=1 );
+    border-bottom: 0.5px solid #3e29a9;
+    z-index: 99999;
+}
+
+.lsc_page_title_row
+{
+    font-size: 16px;
+    color: rgba(255,255,255,0.8);
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.lsc_page_title_row i
+{
+    color: rgba(255,255,255,1);
+}
+
+.lsc_page_title
+{
+    text-align: center;
+}
+/** End Section Header Bar **/
+
+/** Start Section Header **/
+#lsc_header
+{
+    background: rgba(55,39,134,1);
+    background: -moz-linear-gradient(-45deg, rgba(55,39,134,1) 0%, rgba(63,41,176,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(55,39,134,1)), color-stop(100%, rgba(63,41,176,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(55,39,134,1) 0%, rgba(63,41,176,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(55,39,134,1) 0%, rgba(63,41,176,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(55,39,134,1) 0%, rgba(63,41,176,1) 100%);
+    background: linear-gradient(135deg, rgba(55,39,134,1) 0%, rgba(63,41,176,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#372786', endColorstr='#3f29b0', GradientType=1 );
+}
+
+.lsc_series_meta_row
+{
+    color: rgba(255,255,255,0.9);
+    padding-bottom: 30px;
+}
+
+.lsc_series_meta_row span
+{
+    display: block;
+    text-align: center;
+}
+
+.lsc_series_meta_detail
+{
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+}
+
+.lsc_series_meta_title
+{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.lsc_match_meta_row
+{
+    text-align: center;
+    font-size: 11px;
+    color: rgba(255,255,255,0.6);
+}
+
+.lsc_team_icon
+{
+    width: 60px;
+    padding: 6px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 100%;
+}
+
+.lsc_team_left
+{
+    text-align: left;
+}
+
+.lsc_team_right
+{
+    text-align: right;
+}
+
+.lsc_match_meta_row ul
+{
+    padding: 0;
+    padding-top: 15px;
+}
+
+.lsc_match_meta_row li
+{
+    list-style: none;
+}
+
+.lsc_match_score_meta span
+{
+    color: rgba(255,255,255,1);
+}
+
+.lsc_match_score
+{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.lsc_match_time
+{
+    display: inline-block;
+    background-color: #c92c2b;
+    padding: 5px 11px;
+    border-radius: 10px;
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+.lsc_page_tabs
+{
+    margin-top: 15px;
+    background: rgba(255,255,255,0.07);
+    
+    background: rgba(255,255,255,0.06);
+    background: -moz-linear-gradient(left, rgba(255,255,255,0.12) 0%, rgba(237,237,237,0.06) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0.12)), color-stop(100%, rgba(237,237,237,0.06)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0.12) 0%, rgba(237,237,237,0.06) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,0.12) 0%, rgba(237,237,237,0.06) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,0.12) 0%, rgba(237,237,237,0.06) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0.12) 0%, rgba(237,237,237,0.06) 100%);
+}
+
+.lsc_page_tabs ul
+{
+    padding: 0;
+}
+
+.lsc_page_tabs ul li
+{
+    float: left;
+    list-style: none;
+    width: 33.33%;
+    text-align: center;
+    color: rgba(255,255,255,0.3);
+    padding: 14px 0;
+    font-size: 14px;
+}
+
+.lsc_page_tabs ul li span
+{
+    position: relative;
+    display: inline-block;
+}
+
+.lsc_page_tabs ul li.active
+{
+    color: rgba(255,255,255,0.9);
+}
+
+.lsc_page_tabs ul li.active span:after
+{
+    position: absolute;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    background: #c92c2b;
+    width: inherit;
+    width: 100%;
+    left: 0;
+    bottom: -14px;
+}
+/** End Section Header **/
+
+/** Start Section Body **/
+#lsc_body
+{
+    padding-bottom: 75px !important;
+    background: #f8f8f8;
+}
+
+.lsc_match_stats_row
+{
+    text-align: center;
+    margin: 0;
+    background: #fff;
+    padding: 15px 0;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.lsc_match_stat_num
+{
+    background: #372786;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.lsc_match_stat_desc i
+{
+    display: block;
+    font-size: 25px;
+    color: rgba(0,0,0,0.55);
+}
+
+.lsc_match_stat_desc span
+{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(0,0,0,0.8);
+    font-weight: bold;
+}
+/** End Section Body **/
+
+/** Start Section Footer **/
+#lsc_footer
+{
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    padding: 0 !important;
+    padding-bottom: 30px !important;
+    border-radius: 30px 30px 0 0;
+    border: 1px solid rgba(0,0,0,0.05);
+    z-index: 9999;
+}
+
+.lsc_footer_tabs ul
+{
+    padding: 0;
+}
+
+.lsc_footer_tabs ul li
+{
+    float: left;
+    list-style: none;
+    width: 25%;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.lsc_footer_tabs ul li span
+{
+    position: relative;
+    display: inline-block;
+    color: rgba(0,0,0,0.2);
+}
+
+.lsc_footer_tabs ul li.active span
+{
+    color: rgba(0,0,0,0.9);
+}
+
+.lsc_footer_tabs ul li.active span:after
+{
+    position: absolute;
+    content: '';
+    display: inline-block;
+    height: 3px;
+    background: #c92c2b;
+    width: inherit;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+}
+
+.lsc_app_footer_row .lsc_sep
+{
+    display: inline-block;
+    width: 35%;
+    height: 2.5px;
+    background: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+}
+/** End Section Footer **/

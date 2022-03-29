@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Live Score Card</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div id="lsc_app" class="row">
+
+            <!-- Start Section Header Bar -->
+            <section id="lsc_header_bar" class="col-12">
+                <div class="row lsc_page_title_row">
+                    <div class="col-2">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <div class="col-8 lsc_page_title">
+                        Monopole Global App
+                    </div>
+                </div>
+            </section>
+            <!-- End Section Header Bar -->
+
+            <!-- Start Section Header -->
+            <section id="lsc_header" class="col-12">
+                <div class="row lsc_series_meta_row">
+                    <div class="col-12">
+                        <span class="lsc_series_meta_detail text">By Elvin Kyungu</span>
+                        <span class="lsc_series_meta_title">Tous les championnats</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row lsc_match_meta_row">
+                        <div class="col-4 lsc_team_left">
+                            <img src="imgs/barcelona_icon.png" class="lsc_team_icon" />
+                            <div class="lsc_team_stat">
+                                <ul>
+                                    <li class="pleyer_name1">L Messi 60'</li>
+                                    <li class="pleyer_name1">L Suarez 66' 88'</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-4 lsc_match_score_meta">
+                            <span class="lsc_match_score">3 - 2</span>
+                            <span class="lsc_match_time">90 + 2'</span>
+                        </div>
+                        <div class="col-4 lsc_team_right">
+                            <img src="imgs/liverpool_icon.png" class="lsc_team_icon" />
+                            <div class="lsc_team_stat">
+                                <ul>
+                                    <li class="pleyer_name2">M Salah 54'</li>
+                                    <li class="pleyer_name2">S Mane 85'</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row lsc_page_tabs">
+                        <div class="col-12">
+                            <ul>
+                                <li>
+                                    <span>Hier</span>
+                                </li>
+                                <li class="active">
+                                    <span>Aujourd'hui</span>
+                                </li>
+                                <li>
+                                    <span>Demain</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section Header -->
+        </div>
+    </div><br>
+    <div class="container">
+        <!-- Start Section Body -->
+        <section id="lsc_body" class="col-12">
+            <h6 class="text-center" id="equipe_content"></h6>
+
+        </section>
+        <section id="lsc_body" class="col-12">
+            <div class="row lsc_match_stats_row">
+                <div class="col-3 justify-content-center align-self-center">
+                    <span class="lsc_match_stat_num">03</span>
+                </div>
+                <div class="col-6 justify-content-center align-self-center">
+                    <span class="lsc_match_stat_desc">
+                            <i class="fa fa-dot-circle-o"></i>
+                            <span>Shoot On Target</span>
+                    </span>
+                </div>
+                <div class="col-3 justify-content-center align-self-center">
+                    <span class="lsc_match_stat_num">03</span>
+                </div>
+            </div>
+            <div class="row lsc_match_stats_row">
+                <div class="col-3 justify-content-center align-self-center">
+                    <span class="lsc_match_stat_num">05</span>
+                </div>
+                <div class="col-6 justify-content-center align-self-center">
+                    <span class="lsc_match_stat_desc">
+                            <i class="fa fa-square-o"></i>
+                            <span>Shoot Off Target</span>
+                    </span>
+                </div>
+                <div class="col-3 justify-content-center align-self-center">
+                    <span class="lsc_match_stat_num">08</span>
+                </div>
+            </div>
+            <div class="row lsc_match_stats_row">
+                <div class="col-3 justify-content-center align-self-center">
+                    <span class="lsc_match_stat_num">03</span>
+                </div>
+                <div class="col-6 justify-content-center align-self-center">
+                    <span class="lsc_match_stat_desc">
+                        <i class="fa fa-hand-paper-o"></i>
+                        <span>Total Save</span>
+                    </span>
+                </div>
+                <div class="col-3 justify-content-center align-self-center">
+                    <span class="lsc_match_stat_num">03</span>
+                </div>
+            </div>
+            <div class="row lsc_match_stats_row">
+                <div class="col-3 justify-content-center align-self-center">
+                    <span class="lsc_match_stat_num">68%</span>
+                </div>
+                <div class="col-6 justify-content-center align-self-center">
+                    <span class="lsc_match_stat_desc">
+                        <i class="fa fa-users"></i>
+                        <span>Ball Possession</span>
+                    </span>
+                </div>
+                <div class="col-3 justify-content-center align-self-center">
+                    <span class="lsc_match_stat_num">32%</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>
