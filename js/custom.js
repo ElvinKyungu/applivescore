@@ -8,19 +8,6 @@ var date = new Date();
 dateplayed.innerText = 'Le '+date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear();
 console.log(date);
 
-function equipe1(logoChampionnat, nombreEquipe) {
-    // img1.setAttribute("src", logoChampionnat);
-    console.log(contentequipe)
-    contentequipe.innerText = '<span class="nomequipe1">' + nombreEquipe +
-        '</span> vs ';
-    console.log(nombreEquipe);
-}
-
-function equipe2(logoChampionnat, nombreEquipe) {
-    // img2.setAttribute("src", logoChampionnat);
-    nomEquipe2.innerHtml = '<span class="nomequipe2">' + nombreEquipe +
-        '</span>';
-}
 let key = "83bdc0d469f5f2d5bfd054b7f2433bd98c351f956ebaf66f9ff946e1027970d3";
 let text = '';
 fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
@@ -37,30 +24,26 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
                 let home_team = match.event_home_team;
                 let away_team =match.event_away_team;
                 let final_score = match.event_final_result
+                let logoChampionnat = match.league_logo;
                 text += `
                 <h5 class="text-center h5">
                     <span class="" id="equipe_content">${home_team} vs ${away_team}</span>
                 </h5>
                 <div class="row lsc_match_stats_row">
                     <div class="col-3 justify-content-center align-self-center">
-                        <img src="imgs/liverpool_icon.png" class="lsc_team_icon" />
+                        <img src="${logoChampionnat}" class="lsc_team_icon" />
                     </div>
                     <div class="col-6 justify-content-center align-self-center">
                         <span class="lsc_match_stat_desc">
-                            <i class="fa fa-dot-circle-o"></i>
+                            <i class="fa"></i>
                             <span class="h4">${final_score}</span>
                         </span>
                     </div>
                     <div class="col-3 justify-content-center align-self-center">
-                        <img src="imgs/barcelona_icon.png" class="lsc_team_icon" />
+                        <img src="${logoChampionnat}" class="lsc_team_icon" />
                     </div>
                 </div>
                 `;
-                // '<span class="nomequipe1">' + match.event_home_team +
-                //     '</span> vs <span class="nomequipe2">' + match.event_away_team +
-                //     '</span><br/>'
-                    // equipe1(match.league_logo, match.event_home_team);
-                    // equipe2(match.league_logo, match.event_away_team);
             });
             contentequipe.innerHTML = text
         } else {
@@ -71,8 +54,6 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
         console.error('Error:', error)
     });
 
-// aficheEquipes(equipe1);
-// aficheEquipes(equipe2);
-// setInterval(function() {
-//     location.reload();
-// }, 5000);
+setInterval(function() {
+    location.reload();
+}, 5000);
