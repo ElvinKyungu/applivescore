@@ -39,7 +39,7 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
             contentequipe.innerHTML = text
         } else {
             // divcontent.style.display = "none";
-            divcontent.innerText = "Y'a pas de match vieux !"
+            divcontent.innerHTML = "<h4>Y a pas de matchs broh !</h4>"
         }
 
     }).catch((error) => {
