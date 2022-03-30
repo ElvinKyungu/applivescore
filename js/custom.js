@@ -51,6 +51,6 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
         console.error('Error:', error)
     });
 
-setInterval(function() {
-    location.reload();
-}, 5000);
+// setInterval(function() {
+//     location.reload();
+// }, 5000);
