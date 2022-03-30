@@ -49,7 +49,7 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
                         <img src="imgs/barcelona_icon.png" class="lsc_team_icon" />
                     </div>
                 </div>
-                `
+                `;
                 // '<span class="nomequipe1">' + match.event_home_team +
                 //     '</span> vs <span class="nomequipe2">' + match.event_away_team +
                 //     '</span><br/>'
