@@ -36,6 +36,7 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
                 
                 let home_team = match.event_home_team;
                 let away_team =match.event_away_team;
+                let final_score = match.event_final_result
                 text += `
                 <h5 class="text-center h5">
                     <span class="" id="equipe_content">${home_team} vs ${away_team}</span>
@@ -47,7 +48,7 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
                     <div class="col-6 justify-content-center align-self-center">
                         <span class="lsc_match_stat_desc">
                             <i class="fa fa-dot-circle-o"></i>
-                            <span class="h4">2 - 1</span>
+                            <span class="h4">${final_score}</span>
                         </span>
                     </div>
                     <div class="col-3 justify-content-center align-self-center">
