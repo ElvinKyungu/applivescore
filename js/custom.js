@@ -43,7 +43,7 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
         }
 
     }).catch((error) => {
-        console.error('Error:', error);
+        console.error('Error:', error)
     });
 
 // aficheEquipes(equipe1);
