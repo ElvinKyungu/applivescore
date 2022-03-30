@@ -251,4 +251,7 @@ body
     color: rgba(0,0,0,0.8);
     font-weight: bold;
 }
+.equipe_content{
+    font-style: italic;
+}
 /** End Section Body **/

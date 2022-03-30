@@ -1,12 +1,9 @@
-let img1 = document.getElementsByClassName('img1');
-let img2 = document.getElementsByClassName('img2');
 let divcontent = document.getElementsByClassName('lsc_match_stats_row');
 let contentequipe = document.getElementById('listmatchs');
-let dateplayed = document.getElementById('date');
+let dateNow = document.getElementById('date');
 
 var date = new Date();
-dateplayed.innerText = 'Le '+date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear();
-console.log(date);
+dateNow.innerText = 'Le '+date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear();
 
 let key = "83bdc0d469f5f2d5bfd054b7f2433bd98c351f956ebaf66f9ff946e1027970d3";
 let text = '';
@@ -19,12 +16,12 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
         if (matchs.result) {
             // let matchs = matchs.result;
             matchs.result.forEach(function(match) {
-                console.log(contentequipe)
-                
+            
                 let home_team = match.event_home_team;
                 let away_team =match.event_away_team;
                 let final_score = match.event_final_result
                 let logoChampionnat = match.league_logo;
+                
                 text += `
                 <h5 class="text-center h5">
                     <span class="" id="equipe_content">${home_team} vs ${away_team}</span>
