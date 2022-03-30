@@ -2,6 +2,10 @@ let img1 = document.getElementsByClassName('img1');
 let img2 = document.getElementsByClassName('img2');
 let divcontent = document.getElementsByClassName('lsc_match_stats_row');
 let contentequipe = document.getElementById('listmatchs');
+let dateplayed = document.getElementById('date');
+var date = new Date();
+dateplayed.innerText = 'Le '+date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear();
+console.log(date);
 
 function equipe1(logoChampionnat, nombreEquipe) {
     // img1.setAttribute("src", logoChampionnat);
@@ -28,6 +32,7 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
             // let matchs = matchs.result;
             matchs.result.forEach(function(match) {
                 console.log(contentequipe)
+                
                 let home_team = match.event_home_team;
                 let away_team =match.event_away_team;
                 text += `
