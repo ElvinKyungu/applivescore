@@ -3,19 +3,19 @@ let img2 = document.getElementsByClassName('img2');
 let divcontent = document.getElementsByClassName('lsc_match_stats_row');
 let contentequipe = document.getElementById('listmatchs');
 
-// function equipe1(logoChampionnat, nombreEquipe) {
-//     // img1.setAttribute("src", logoChampionnat);
-//     console.log(contentequipe)
-//     contentequipe.innerText = '<span class="nomequipe1">' + nombreEquipe +
-//         '</span> vs ';
-//     console.log(nombreEquipe);
-// }
+function equipe1(logoChampionnat, nombreEquipe) {
+    // img1.setAttribute("src", logoChampionnat);
+    console.log(contentequipe)
+    contentequipe.innerText = '<span class="nomequipe1">' + nombreEquipe +
+        '</span> vs ';
+    console.log(nombreEquipe);
+}
 
-// function equipe2(logoChampionnat, nombreEquipe) {
-//     // img2.setAttribute("src", logoChampionnat);
-//     nomEquipe2.innerHtml = '<span class="nomequipe2">' + nombreEquipe +
-//         '</span>';
-// }
+function equipe2(logoChampionnat, nombreEquipe) {
+    // img2.setAttribute("src", logoChampionnat);
+    nomEquipe2.innerHtml = '<span class="nomequipe2">' + nombreEquipe +
+        '</span>';
+}
 let key = "83bdc0d469f5f2d5bfd054b7f2433bd98c351f956ebaf66f9ff946e1027970d3";
 let text = '';
 fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
@@ -27,7 +27,6 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
         if (matchs.result) {
             // let matchs = matchs.result;
             matchs.result.forEach(function(match) {
-                console.log("count");
                 console.log(contentequipe)
                 let home_team = match.event_home_team;
                 let away_team =match.event_away_team;
@@ -58,7 +57,6 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
             });
             contentequipe.innerHTML = text
         } else {
-            // divcontent.style.display = "none";
             divcontent.innerHTML = "<h4>Y a pas de matchs broh !</h4>"
         }
 
