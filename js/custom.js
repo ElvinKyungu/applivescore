@@ -1,7 +1,7 @@
 let img1 = document.getElementsByClassName('img1');
 let img2 = document.getElementsByClassName('img2');
 let divcontent = document.getElementsByClassName('lsc_match_stats_row');
-let contentequipe = document.getElementById('equipe_content');
+let contentequipe = document.getElementById('listmatchs');
 
 // function equipe1(logoChampionnat, nombreEquipe) {
 //     // img1.setAttribute("src", logoChampionnat);
@@ -29,9 +29,26 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
             matchs.result.forEach(function(match) {
                 console.log("count");
                 console.log(contentequipe)
-
+                let home_team = match.event_home_team;
+                let away_team =match.event_away_team;
                 text += `
-                
+                <h5 class="text-center h5">
+                    <span class="" id="equipe_content">${home_team} vs ${away_team}</span>
+                </h5>
+                <div class="row lsc_match_stats_row">
+                    <div class="col-3 justify-content-center align-self-center">
+                        <img src="imgs/liverpool_icon.png" class="lsc_team_icon" />
+                    </div>
+                    <div class="col-6 justify-content-center align-self-center">
+                        <span class="lsc_match_stat_desc">
+                            <i class="fa fa-dot-circle-o"></i>
+                            <span class="h4">2 - 1</span>
+                        </span>
+                    </div>
+                    <div class="col-3 justify-content-center align-self-center">
+                        <img src="imgs/barcelona_icon.png" class="lsc_team_icon" />
+                    </div>
+                </div>
                 `
                 // '<span class="nomequipe1">' + match.event_home_team +
                 //     '</span> vs <span class="nomequipe2">' + match.event_away_team +
