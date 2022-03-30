@@ -1,9 +1,5 @@
 let img1 = document.getElementsByClassName('img1');
-let nomEquipe1 = document.getElementsByClassName('nomequipe1');
 let img2 = document.getElementsByClassName('img2');
-let nomEquipe2 = document.getElementsByClassName('nomequipe2');
-let pleyer_name1 = document.getElementsByClassName('pleyer_name1');
-let pleyer_name2 = document.getElementsByClassName('pleyer_name2');
 let divcontent = document.getElementsByClassName('lsc_match_stats_row');
 let contentequipe = document.getElementById('equipe_content');
 
