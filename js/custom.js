@@ -30,7 +30,9 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
                 console.log("count");
                 console.log(contentequipe)
 
-                // text += 
+                text += `
+                
+                `
                 // '<span class="nomequipe1">' + match.event_home_team +
                 //     '</span> vs <span class="nomequipe2">' + match.event_away_team +
                 //     '</span><br/>'
