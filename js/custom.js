@@ -3,6 +3,7 @@ let img2 = document.getElementsByClassName('img2');
 let divcontent = document.getElementsByClassName('lsc_match_stats_row');
 let contentequipe = document.getElementById('listmatchs');
 let dateplayed = document.getElementById('date');
+
 var date = new Date();
 dateplayed.innerText = 'Le '+date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear();
 console.log(date);
