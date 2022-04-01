@@ -1,4 +1,3 @@
-let divcontent = document.getElementsByClassName('lsc_match_stats_row');
 let contentequipe = document.getElementById('listmatchs');
 let dateNow = document.getElementById('date');
 
@@ -18,7 +17,7 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
             matchs.result.forEach(function(match) {
             
                 let home_team = match.event_home_team;
-                let away_team =match.event_away_team;
+                let away_team = match.event_away_team;
                 let final_score = match.event_final_result
                 let logoChampionnat = match.league_logo;
                 
@@ -44,7 +43,7 @@ fetch(`https://apiv2.allsportsapi.com/football/?met=Livescore&APIkey=${key}`)
             });
             contentequipe.innerHTML = text
         } else {
-            divcontent.innerHTML = "<h4>Y a pas de matchs broh !</h4>"
+
         }
 
     }).catch((error) => {

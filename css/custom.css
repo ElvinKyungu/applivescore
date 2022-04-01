@@ -107,6 +107,7 @@ body
 .lsc_team_icon
 {
     width: 60px;
+    height: 60px;
     padding: 6px;
     background-color: rgba(255,255,255,0.9);
     border-radius: 100%;
@@ -253,5 +254,8 @@ body
 }
 .equipe_content{
     font-style: italic;
+}
+#equipe_content{
+    font-size: 20px;
 }
 /** End Section Body **/
